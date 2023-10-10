@@ -129,10 +129,9 @@
         {#if !data.user}
         <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Pricing</a>
         <a href="/login" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Sign In</a>
+        <a href="/register" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Get Started</a>
         {/if}
-        {#if data.user}
-                <a href="/register" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Get Started</a>
-        {/if}       
+    
       </div>
       {#if data.user}  
       <div class="border-t border-gray-200 pt-4 pb-3">

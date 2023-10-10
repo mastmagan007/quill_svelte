@@ -31,7 +31,7 @@
 			size: 'lg',
 			class: 'mt-5'
 		})}
-		href="/dashboard"
+		href="/register"
 		target="_blank"
 	>
 		Get started

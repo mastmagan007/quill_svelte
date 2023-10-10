@@ -1,22 +1,8 @@
 <script lang="ts">
-import { Button } from '$lib/components/ui/button';
-import { Label } from '$lib/components/ui/label';
-import { Input } from '$lib/components/ui/input';
-</script>
-<div class="h-screen grid place-content-center">
-	<div class="bg-muted shadow-lg p-12">
-		<form method="POST" class="flex flex-col gap-3">
-			<hgroup>
-				
-				<h3 class="font-medium text-lg">Welcome back!</h3>
-			</hgroup>
-			<Label for="username">Username</Label>
-			<Input type="text" id="username" name="username" required />
-			<label for="password">Password</label>
-			<Input type="password" id="password" name="password" required />
-		
-			<Button type="submit">Login</Button>
-		</form>
-		<p class="mt-3">Don't have an account? <a href="/register">Register</a></p>
-		</div>
-</div>
+	import type { PageData } from "./$types";
+	import SettingsForm from "$lib/components/Login_Form/loginForm.svelte";
+	export let data: PageData;
+  </script>
+  <div class="max-w-xs w-full mx-auto">
+    <div class="text-lg md:text-2xl font-medium mt-10 mb-6">Login</div>
+  <SettingsForm form={data.form} /></div>
