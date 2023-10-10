@@ -26,10 +26,14 @@
         </div>
         <div class="hidden sm:ml-6 sm:flex sm:items-center gap-6">
             <a href="#" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Pricing</a>
+
+           
             <a href="#" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Sign In</a>
-            <a href="#" class="  {buttonVariants({
+            <a href="/register" class="  {buttonVariants({
                 size: 'sm',
               })}" >Get Started<Icon class="ms-2 transition-all" icon="zondicons:arrow-right" /></a>
+          
+        
           <button type="button" class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
             <span class="sr-only">View notifications</span>
             <!-- Heroicon name: outline/bell -->
@@ -66,7 +70,9 @@
             </div>
             {/if}
           </div>
+       
         </div>
+       
         <div class="-mr-2 flex items-center sm:hidden">
           <!-- Mobile menu button -->
           <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">

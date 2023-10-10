@@ -2,11 +2,20 @@
 // for information about these interfaces
 declare global {
 	namespace App {
-		// interface Error {}
-		// interface Locals {}
-		// interface PageData {}
-		// interface Platform {}
+		interface Locals {
+			auth: import("lucia").AuthRequest;
+		}
 	}
+	var __prisma: PrismaClient
+	namespace Lucia {
+		type Auth = import("$lib/server/lucia").Auth;
+		type DatabaseUserAttributes = {
+			username: string	
+
+		};
+		type DatabaseSessionAttributes =  Record<string, any>;
+	}
+
 }
 
 export {};
