@@ -1,17 +1,15 @@
 <script lang="ts">
 	import { buttonVariants } from '$lib/components/ui/button';
 	import Icon from '@iconify/svelte';
-	import MaxWidthWrapper from '$lib/components/MaxWidthWrapper.svelte';
 	import dashboard_thumb from '$lib/img/dashboard-preview.jpg';
 	import File_thumb from '$lib/img/file-upload-preview.jpg';
-	import thumbnail from '$lib/img/thumbnail.png';
-	import { enhance } from '$app/forms';
+
+
 </script>
 
-<form method="post" action="?/logout" use:enhance>
-	<input type="submit" value="Sign out" />
-</form>
+
     <div class="mx-auto w-full max-w-screen-xl px-2.5 md:px-20 mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+	
 
 	<div
 		class=" ext-center mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50"
